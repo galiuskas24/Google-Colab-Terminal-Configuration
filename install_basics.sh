@@ -1,1 +1,1 @@
-apt-get install htop nano ranger psmisc
+apt-get install htop nano ranger psmisc vim

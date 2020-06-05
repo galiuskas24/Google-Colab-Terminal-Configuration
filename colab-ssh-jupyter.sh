@@ -7,7 +7,6 @@ read -p 'Enter the authtoken from ngrok :' authtoken
 apt-get install -qq -o=Dpkg::Use-Pty=0 openssh-server pwgen > /dev/null
 mkdir -p /var/run/sshd
 echo "PermitRootLogin yes" >> /etc/ssh/sshd_config && echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config
-echo "LD_LIBRARY_PATH=/usr/lib64-nvidia" >> /root/.bashrc && echo "export LD_LIBRARY_PATH" >> /root/.bashrc
 /usr/sbin/sshd -D &
 mkdir /root/.ssh
 read -p "run 'ssh-keygen' on your local pc and \ncopy paste the content of ~/.ssh/id_rsa.pub file" rsa # for example https://imgur.com/a/z62timq
