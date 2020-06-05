@@ -1,4 +1,5 @@
 # Google Colab Configuration
+[![system](https://img.shields.io/badge/system-ubuntu-blue)]()
 
 ## Implementation
 ### Preparation steps 
