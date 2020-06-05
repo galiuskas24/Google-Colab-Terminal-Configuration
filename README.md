@@ -2,7 +2,7 @@
 [![system](https://img.shields.io/badge/system-ubuntu-blue)]()
 
 ## Implementation
-### Preparation steps 
+### Preparation steps:  
 1. Create ngrok account (https://dashboard.ngrok.com/signup)
 2. After you login go to `Getting Started -> Setup & Installation` and copy **authtoken** from command in second section (save that token for later).
 3. Go to terminal on your computer and get public **SSH key** with `cat ./.ssh/id_rsa.pub`.       
@@ -10,7 +10,7 @@ If you do not have SSH key you can generate new key with command `ssh-keygen`.
           
 Now we have **authtoken** and **SSH key**.   
   
-### Main part   
+### Main part:    
 1. Clone this config repository `git clone git@github.com:galiuskas24/Google-Colab-Configuration.git`
 2. Go to Google Colab and run fist cell from [Example of cells](#example-of-cells).    
 3. Go to Gooble Colab and run second cell from  [Example of cells](#example-of-cells).     
