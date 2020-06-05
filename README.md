@@ -23,3 +23,34 @@ Now we have **authtoken** and **SSH key**.
 Sometimes when we run some program on GPU from our new established terimnal if we exit the program with `Ctrl + Z` than the memory will be sturck on GPU so we need to exit our program only with `Ctrl + C`.    
 But if that problem happens to us anyway, the only way we can find that process is with `fuser -v /dev/nvidia*` (if we do not have fuser -> `apt-get psmisc`.     
 After we find the  process kill him with `kill -9 <PID>` and that will empty you memory buffer on GPU. 
+
+
+## Example of cells
+
+### First cell:
+'''
+# FIRST TWO COMMANDS IS ONLY FOR TENSORFLOW
+!printf "export PATH=/usr/local/cuda-10.0/bin${PATH:+:${PATH}}\n" | cat >> ~/.bashrc #SET CUDA PATH
+!printf "export LD_LIBRARY_PATH=/usr/local/cuda/lib64:${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}\n" | cat >> ~/.bashrc #SET LIB PATH
+
+# SET START TERMINAL PATH
+!printf "cd ../content/drive/My\ Drive/\n" | cat >> ~/.bashrc # set start terminal path 
+
+# INSTALL SOME BASIC PROGRAMS (WE CAN ADD PROGRAMS IN FILE AT WILL)
+!bash  ~/../content/drive/My\ Drive/config/install_basics.sh
+'''
+
+### Second cell:
+'''
+# RUN OUR SCRIPT
+!bash  ~/../content/drive/My\ Drive/config/colab-ssh-jupyter.sh # open ssh connection
+
+# WE CAN PAST OUR AUTHTOKEN AND SSH KEY IN COMMENT BECAUSE IS EASY TO USE THEM
+'''
+Auth:
+< --------------- AUTHTOKEN FROM NGROK ------------------- >
+
+SSH:
+< ------------- SSH PUBLIC KEY FROM COMUPTER -_------------>
+'''
+''' 
