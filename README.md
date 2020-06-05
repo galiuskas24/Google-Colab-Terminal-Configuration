@@ -1,4 +1,4 @@
-# Google Colab Configuration
+# Google Colab Terminal Configuration
 [![system](https://img.shields.io/badge/system-ubuntu-blue)]()
 
 ## Implementation
