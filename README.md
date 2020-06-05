@@ -7,7 +7,8 @@
 3. Go to terminal on your computer and get public **SSH key** with `cat ./.ssh/id_rsa.pub`. If you do not have SSH key you can generate new key with command `ssh-keygen`.   
 Now we have **authtoken** and **SSH key**.   
   
-### Main part
+### Main part 
+**MARK:** example in section [Example of cells](#example-of-cells))   
 1. Go to Google Colab and set position to My Drive, run in cell this command `!cd  ~/../content/drive/My\ Drive/`
 2. Clone this config repository `git clone git@github.com:galiuskas24/Google-Colab-Configuration.git`
 3. Run this script with `!bash  ~/../content/drive/My\ Drive/config/colab-ssh-jupyter.sh`    
@@ -29,12 +30,12 @@ After we find the  process kill him with `kill -9 <PID>` and that will empty you
 
 ### First cell:
 ```shell
-# FIRST TWO COMMANDS IS ONLY FOR TENSORFLOW
+# SET PATH AND LIB_PATH FOR CUDA
 !printf "export PATH=/usr/local/cuda-10.0/bin${PATH:+:${PATH}}\n" | cat >> ~/.bashrc #SET CUDA PATH
 !printf "export LD_LIBRARY_PATH=/usr/local/cuda/lib64:${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}\n" | cat >> ~/.bashrc #SET LIB PATH
 
 # SET START TERMINAL PATH
-!printf "cd ../content/drive/My\ Drive/\n" | cat >> ~/.bashrc # set start terminal path 
+!printf "cd ../content/drive/My\ Drive/\n" | cat >> ~/.bashrc    
 
 # INSTALL SOME BASIC PROGRAMS (WE CAN ADD PROGRAMS IN FILE AT WILL)
 !bash  ~/../content/drive/My\ Drive/config/install_basics.sh
@@ -43,8 +44,8 @@ After we find the  process kill him with `kill -9 <PID>` and that will empty you
 ### Second cell:
 
 ```shell
-# RUN OUR SCRIPT
-!bash  ~/../content/drive/My\ Drive/config/colab-ssh-jupyter.sh # open ssh connection
+# RUN OUR SCRIPT (OPEN SSH CONNECTION)
+!bash  ~/../content/drive/My\ Drive/config/colab-ssh-jupyter.sh
 
 # WE CAN PAST OUR AUTHTOKEN AND SSH KEY IN COMMENT BECAUSE IS EASY TO USE THEM
 '''
