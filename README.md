@@ -11,8 +11,8 @@ If you do not have SSH key you can generate new key with command `ssh-keygen`.
 Now we have **authtoken** and **SSH key**.   
   
 ### Main part: 
-1. Run in cell `!cd ../content/drive/My\ Drive/\`
-2. Clone this config repository `git clone git@github.com:galiuskas24/Google-Colab-Terminal-Configuration.git`
+1. Run in cell `%cd ../content/drive/My\ Drive/\`
+2. Clone this config repository `git clone https://github.com/galiuskas24/Google-Colab-Terminal-Configuration`
 3. Go to Google Colab and run fist cell from [Example of cells](#example-of-cells).    
 4. Go to Gooble Colab and run second cell from  [Example of cells](#example-of-cells).     
   4a. The script will ask you first for **authtoken** and after that for **SSH key** (for SSH key -> copy the whole output from third preparation step)    
