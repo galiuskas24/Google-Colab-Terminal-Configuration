@@ -58,8 +58,8 @@ SSH:
 ## Remarks
 
 ### Memory stuck on GPU
-Sometimes when we run some program on GPU from our new established terimnal if we exit the program with `Ctrl + Z` than the memory will be sturck on GPU so we need to exit our program only with `Ctrl + C`.    
-But if that problem happens to us anyway, the only way we can find that process is with `fuser -v /dev/nvidia*` (if we do not have fuser -> `apt-get psmisc`.     
+Sometimes when we run some program on GPU from our new established terimnal, if we exit the program with `Ctrl + Z` than the memory will be stuck on GPU so we need to exit our program only with `Ctrl + C`.    
+But if that problem happens to us anyway, the only way we can find that process is with this command `fuser -v /dev/nvidia*`. If we do not have fuser, install him with this command `apt-get psmisc`.     
 After we find the  process kill him with `kill -9 <PID>` and that will empty you memory buffer on GPU. 
 
 
