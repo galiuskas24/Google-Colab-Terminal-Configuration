@@ -28,7 +28,7 @@ After we find the  process kill him with `kill -9 <PID>` and that will empty you
 ## Example of cells
 
 ### First cell:
-'''
+```shell
 # FIRST TWO COMMANDS IS ONLY FOR TENSORFLOW
 !printf "export PATH=/usr/local/cuda-10.0/bin${PATH:+:${PATH}}\n" | cat >> ~/.bashrc #SET CUDA PATH
 !printf "export LD_LIBRARY_PATH=/usr/local/cuda/lib64:${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}\n" | cat >> ~/.bashrc #SET LIB PATH
@@ -38,10 +38,11 @@ After we find the  process kill him with `kill -9 <PID>` and that will empty you
 
 # INSTALL SOME BASIC PROGRAMS (WE CAN ADD PROGRAMS IN FILE AT WILL)
 !bash  ~/../content/drive/My\ Drive/config/install_basics.sh
-'''
+```
 
 ### Second cell:
-'''
+
+```shell
 # RUN OUR SCRIPT
 !bash  ~/../content/drive/My\ Drive/config/colab-ssh-jupyter.sh # open ssh connection
 
@@ -53,4 +54,4 @@ Auth:
 SSH:
 < ------------- SSH PUBLIC KEY FROM COMUPTER -_------------>
 '''
-''' 
+```
