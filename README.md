@@ -6,15 +6,16 @@
 1. Create ngrok account (https://dashboard.ngrok.com/signup)
 2. After you login go to `Getting Started -> Setup & Installation` and copy **authtoken** from command in second section (save that token for later).
 3. Go to terminal on your computer and get public **SSH key** with `cat ./.ssh/id_rsa.pub`.       
-If you do not have SSH key you can generate new key with command `ssh-keygen`.   
+If you do not have SSH key you can generate new key with command `ssh-keygen` (you can just hit Enter every time).   
           
 Now we have **authtoken** and **SSH key**.   
   
 ### Main part: 
-1. Run in cell `%cd ../content/drive/My\ Drive/\`
-2. Clone this config repository `!git clone https://github.com/galiuskas24/Google-Colab-Terminal-Configuration`
-3. Go to Google Colab and run fist cell from [Example of cells](#example-of-cells).    
-4. Go to Gooble Colab and run second cell from  [Example of cells](#example-of-cells).     
+1. Go to Google colab and Mount Drive
+2. Clone this config repository (past in cell next command):    
+`!git clone https://github.com/galiuskas24/Google-Colab-Terminal-Configuration ../content/drive/My\ Drive/\config`
+3. Run fist cell from [Example of cells](#example-of-cells).    
+4. Run second cell from  [Example of cells](#example-of-cells).     
   4a. The script will ask you first for **authtoken** and after that for **SSH key** (for SSH key -> copy the whole output from third preparation step)    
   4b. After that, the script will generate connection command like this:        
       `ssh -o TCPKeepAlive=yes -o ServerAliveInterval=30 root@0.tcp.ngrok.io -p 45454`   
