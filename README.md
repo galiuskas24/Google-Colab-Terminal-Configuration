@@ -3,23 +3,25 @@
 
 ## Implementation
 ### Preparation steps:  
+**We will do this steps only once!!!**    
 1. Create ngrok account (https://dashboard.ngrok.com/signup)
 2. After you login go to `Getting Started -> Setup & Installation` and copy **authtoken** from command in second section (save that token for later).
 3. Go to terminal on your computer and get public **SSH key** with `cat ./.ssh/id_rsa.pub`.       
-If you do not have SSH key you can generate new key with command `ssh-keygen` (you can just hit Enter every time).   
-          
-Now we have **authtoken** and **SSH key**.   
+If you do not have SSH key you can generate new key with command `ssh-keygen` (you can just hit Enter every time).     
+4. Go to Google colab and Mount Drive     
+5. Clone this config repository (past in cell next command):    
+`!git clone https://github.com/galiuskas24/Google-Colab-Terminal-Configuration ../content/drive/My\ Drive/\config`
+ 
+Now we have **authtoken**, **public SSH key** and cloned **config** directory in Google Colab.   
   
 ### Main part: 
-1. Go to Google colab and Mount Drive
-2. Clone this config repository (past in cell next command):    
-`!git clone https://github.com/galiuskas24/Google-Colab-Terminal-Configuration ../content/drive/My\ Drive/\config`
-3. Run fist cell from [Example of cells](#example-of-cells).    
-4. Run second cell from  [Example of cells](#example-of-cells).     
-  4a. The script will ask you first for **authtoken** and after that for **SSH key** (for SSH key -> copy the whole output from third preparation step)    
-  4b. After that, the script will generate connection command like this:        
+**We will do this part every time when we want connect terminat to Google Colab!!!**     
+1. Run fist cell from [Example of cells](#example-of-cells).    
+2. Run second cell from  [Example of cells](#example-of-cells).     
+  3a. The script will ask you first for **authtoken** and after that for **SSH key** (for SSH key -> copy the whole output from third preparation step)    
+  3b. After that, the script will generate connection command like this:        
       `ssh -o TCPKeepAlive=yes -o ServerAliveInterval=30 root@0.tcp.ngrok.io -p 45454`   
-  4c. Copy that command and run in your terminal! Enjoy!    
+  3c. Copy that command and run in your terminal! Enjoy!    
 
 
 ## Example of cells
