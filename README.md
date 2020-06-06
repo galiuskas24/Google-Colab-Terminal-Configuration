@@ -15,7 +15,7 @@ If you do not have SSH key you can generate new key with command `ssh-keygen` (y
 Now we have **authtoken**, **public SSH key** and cloned **config** directory in Google Colab.   
   
 ### Main part: 
-**We will do this part every time when we want connect terminat to Google Colab!!!**     
+**We will do this part every time when we want connect terminal to Google Colab!!!**     
 1. Run fist cell from [Example of cells](#example-of-cells).    
 2. Run second cell from  [Example of cells](#example-of-cells).     
   2a. The script will ask you first for **authtoken** and after that for **SSH key** (for SSH key -> copy the whole output from third preparation step)    
