@@ -18,10 +18,10 @@ Now we have **authtoken**, **public SSH key** and cloned **config** directory in
 **We will do this part every time when we want connect terminat to Google Colab!!!**     
 1. Run fist cell from [Example of cells](#example-of-cells).    
 2. Run second cell from  [Example of cells](#example-of-cells).     
-  3a. The script will ask you first for **authtoken** and after that for **SSH key** (for SSH key -> copy the whole output from third preparation step)    
-  3b. After that, the script will generate connection command like this:        
+  2a. The script will ask you first for **authtoken** and after that for **SSH key** (for SSH key -> copy the whole output from third preparation step)    
+  2b. After that, the script will generate connection command like this:        
       `ssh -o TCPKeepAlive=yes -o ServerAliveInterval=30 root@0.tcp.ngrok.io -p 45454`   
-  3c. Copy that command and run in your terminal! Enjoy!    
+  2c. Copy that command and run in your terminal! Enjoy!    
 
 
 ## Example of cells
