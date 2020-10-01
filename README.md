@@ -1,6 +1,11 @@
 # Google Colab Terminal Configuration
 [![system](https://img.shields.io/badge/system-ubuntu-blue)]()
 
+
+<p align="center">
+  <img src="https://github.com/galiuskas24/Google-Colab-Terminal-Configuration/blob/master/image.png" title="Start">
+</p>
+
 ## Implementation
 ### Preparation steps:  
 **We will do this steps only once!!!**    
